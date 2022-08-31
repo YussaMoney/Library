@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  color: #ffffff;
+  background: linear-gradient(to right, black, gray);
+}
+
+input[type=text],
+input[type=number],
+input[type=checkbox] {
+  margin: 0.2rem 0.2rem 0 1rem;
+}
