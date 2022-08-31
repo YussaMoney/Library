@@ -13,14 +13,14 @@ body {
 input[type=text],
 input[type=number],
 input[type=checkbox] {
-  margin: 0.2rem 0.2rem 0 1rem;
+  margin: 0.2rem 0 0 1rem;
   border-color: rgb(251, 255, 0);
 }
 
 #table {
   margin: 0 auto;
   border-collapse: collapse;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 th, td {
@@ -31,3 +31,21 @@ th, td {
   background-color: rgba(220, 220, 220, .4);
 }
 
+.new-book,
+.add-book {
+  background-color: rgba(220, 220, 220, .4);
+  font-size: 0.9rem;
+  font-weight: bolder;
+  padding: 0.7rem 1.7rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.new-book {
+  margin: 0 auto;
+  display: flex;
+}
+
+.add-book {
+  margin: 0.6rem 0 0 3rem;
+}
