@@ -14,4 +14,19 @@ input[type=text],
 input[type=number],
 input[type=checkbox] {
   margin: 0.2rem 0.2rem 0 1rem;
+  border-color: rgb(251, 255, 0);
 }
+
+#table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 4rem;
+}
+
+th, td {
+  width: 10rem;
+  border: 2px solid black;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
