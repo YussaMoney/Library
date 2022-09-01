@@ -1,5 +1,5 @@
 # Library
- This is a **Library** where someone can `add` or `store` new book with the provided `Add New Book Button` where an `input form` collected user's input or book's details to add to library and can also `remove` book with the provided `Remove Button` labeled `'X'`.
+ This is a **Library** where someone can `add` or `store` new book with the provided `Add New Book Button` where an `input form` collected user's input or book's details to add to library and can also `remove` the existing book with the provided `Remove Button` labeled `'X'`.
 
 
 ![Library](Library.png)
@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Click here](https://github.com/yussamoney/library)
+[Click here](https://yussamoney.github.io/Library)
 
 ## Prerequisites
 
@@ -53,5 +53,5 @@ Give a ⭐️if you like this project!
 - [Teekaytech](https://github.com/Teekaytech)
 - [The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator)
 - [Microverse](https://github.com/microverseinc/linters-config/tree/master/html-css)
--[Jurgengjoncari](https://github.com/jurgengjoncari/library)
+- [Jurgengjoncari](https://github.com/jurgengjoncari/library)
 
