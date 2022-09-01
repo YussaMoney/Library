@@ -10,6 +10,10 @@ body {
   background: linear-gradient(to right, black, gray);
 }
 
+#form {
+  display: none;
+}
+
 input[type=text],
 input[type=number],
 input[type=checkbox] {
@@ -49,3 +53,15 @@ th, td {
 .add-book {
   margin: 0.6rem 0 0 3rem;
 }
+
+.display-added,
+.display-removed {
+  display: none;
+  font-size: 1.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border: 2px solid black;
+  text-align: center;
+  padding: 2rem 4rem;
+ }

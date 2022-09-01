@@ -7,19 +7,19 @@
   <link rel="stylesheet" href="style.css">
   <title>Libary</title>
 </head>
-<table id="table">
-  <thead>
-    <th>Author</th>
-    <th>Title</th>
-    <th>No. of Pages</th>
-    <th>Read?</th>
-    <th>Remove</th>
-  </thead>
-  <tbody>
-  </tbody>
-</table>
-<button type="button" class="new-book">ADD NEW BOOK</button>
 <body>
+  <table id="table">
+    <thead>
+      <th>Author</th>
+      <th>Title</th>
+      <th>No. of Pages</th>
+      <th>Read?</th>
+      <th>Remove</th>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <button type="button" class="new-book">ADD NEW BOOK</button>
   <form id="form">
     Insert Book Details
     <dt>
@@ -40,11 +40,11 @@
     <dt>
       <label for="read">Read?:
         <dt>
-          <input type="checkbox" id="yes" value="yes">
+          <input type="checkbox" id="yes" value="Yes">
           <label for="yes">Yes
           </label>
           <dd>
-            <input type="checkbox" id="no" value="no">
+            <input type="checkbox" id="no" value="No">
             <label for="no">No
             </dd>
           </label>
@@ -53,6 +53,14 @@
     </dt>
     <button type="button" class="add-book">ADD BOOK</button>
   </form>
+
+  <div class="display-added" id="added">
+    Added Successfully!
+  </div>
+
+  <div class="display-removed" id="removed">
+    Removed Successfully!
+  </div>
 
 
 
