@@ -6,7 +6,7 @@
 }
 
 body {
-  color: #ffffff;
+  color: white;
   background: linear-gradient(to right, black, gray);
 }
 
@@ -27,18 +27,19 @@ input[type=checkbox] {
   margin-bottom: 2rem;
 }
 
-th, td {
+th,
+td {
   width: 10rem;
   border: 2px solid black;
   text-align: center;
   padding: 0.5rem 0;
   font-size: 1.5rem;
-  background-color: rgba(220, 220, 220, .4);
+  background-color: rgba(220, 220, 220, 0.4);
 }
 
 .new-book,
 .add-book {
-  background-color: rgba(220, 220, 220, .4);
+  background-color: rgba(220, 220, 220, 0.4);
   font-size: 0.9rem;
   font-weight: bolder;
   padding: 0.7rem 1.7rem;
@@ -65,11 +66,11 @@ th, td {
   border: 2px solid black;
   text-align: center;
   padding: 2rem 4rem;
- }
+}
 
- @media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 480px) {
   .display-added,
   .display-removed {
     display: none;
@@ -105,8 +106,8 @@ and (max-device-width : 480px) {
     margin: 0.6rem 0 0 0;
   }
 
-  th, td {
+  th,
+  td {
     font-size: 0.8rem;
   }
-  
 }
