@@ -64,7 +64,6 @@ function addToBookInfo() {
   read = read.value;
 
   form.style.display = 'none';
-  form.reset();
 
   const added = document.querySelector('#added');
   added.style.display = 'block';
