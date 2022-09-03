@@ -12,13 +12,17 @@ body {
 
 #form {
   display: none;
+  text-align: center;
 }
 
 input[type=text],
-input[type=number],
-input[type=checkbox] {
-  margin: 0.2rem 0 0 1rem;
+input[type=number] {
+  margin: 0.2rem 0 0 12rem;
   border-color: rgb(251, 255, 0);
+}
+
+input[type=radio] {
+  margin-left: 5rem;
 }
 
 #table {
@@ -84,8 +88,6 @@ td {
   }
 
   .display-removed {
-    position: relative;
-    bottom: 13rem;
     background-color: rgb(187, 14, 14);
   }
 

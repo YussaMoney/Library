@@ -24,27 +24,27 @@
     Insert Book Details
     <dt>
       <label for="author">Author:
-        <dd><input type="text" id="author"></dd>
+        <dd><input type="text" id="author" required></dd>
       </label>
     </dt>
     <dt>
       <label for="title">Title:
-        <dd><input type="text" id="title"></dd>
+        <dd><input type="text" id="title" required></dd>
       </label>
     </dt>
     <dt>
       <label for="pages">Pages:
-        <dd><input type="number" id="pages"></dd>
+        <dd><input type="number" id="pages" required></dd>
       </label>
     </dt>
     <dt>
       <label for="read">Read?:
         <dt>
-          <input type="checkbox" id="yes" value="Yes">
+          <input type="radio" id="yes" name="read" value="Yes">
           <label for="yes">Yes
           </label>
           <dd>
-            <input type="checkbox" id="no" value="No">
+            <input type="radio" id="no" name="read" value="No" checked>
             <label for="no">No
             </dd>
           </label>
