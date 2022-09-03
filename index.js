@@ -17,6 +17,7 @@ function addBookToLibrary(book) {
 function displayForm() {
   const form = document.querySelector('#form');
   form.style.display = 'block';
+  addNewBookBtn.style.display = 'none'
 }
 
 function displayBookPage() {
@@ -55,7 +56,7 @@ function addToBookInfo() {
   let author = document.querySelector('#author');
   let title = document.querySelector('#title');
   let pages = document.querySelector('#pages');
-  let read = document.querySelector('input[type=checkbox]:checked');
+  let read = document.querySelector('input[name=read]:checked');
   const form = document.querySelector('#form');
 
   author = author.value;
@@ -64,18 +65,16 @@ function addToBookInfo() {
   read = read.value;
 
   form.style.display = 'none';
+  addNewBookBtn.style.display = 'block'
 
   const added = document.querySelector('#added');
   added.style.display = 'block';
-  setTimeout(() => {
-    added.style.display = 'none';
-  }, 2500);
+  added.style.display = 'none';
 
   const book = new Book(author, title, pages, read);
-  setTimeout(() => {
+  
     addBookToLibrary(book);
     displayBookPage();
-  }, 3000);
 }
 
 addNewBookBtn.addEventListener('click', displayForm);
