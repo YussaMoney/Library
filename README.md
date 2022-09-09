@@ -53,5 +53,3 @@ Give a ⭐️if you like this project!
 - [Teekaytech](https://github.com/Teekaytech)
 - [The Odin Project](https://www.theodinproject.com/lessons/foundations-calculator)
 - [Microverse](https://github.com/microverseinc/linters-config/tree/master/html-css)
-- [Jurgengjoncari](https://github.com/jurgengjoncari/library)
-
