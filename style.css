@@ -67,9 +67,25 @@ td {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
-  border: 2px solid black;
+  border: 3px solid black;
   text-align: center;
   padding: 2rem 4rem;
+}
+
+.display-removed {
+  background-color: rgb(187, 14, 14);
+}
+
+.display-added {
+  background-color: rgb(238, 196, 8);
+}
+
+.removeBtn {
+  font-size: 1rem;
+  background-color: red;
+  padding: 0.2rem 1.3rem 0 ;
+  font-weight: bolder;
+  cursor: pointer;
 }
 
 @media only screen
@@ -88,7 +104,7 @@ td {
   }
 
   .display-removed {
-    background-color: rgb(187, 14, 14);
+    background-color: rgb(7, 4, 4);
   }
 
   .display-added {
@@ -104,10 +120,19 @@ td {
 
   #form {
     display: none;
-    align-items: center;
     text-align: center;
     margin-top: 0.5rem;
   }
+
+  input[type=text],
+  input[type=number] {
+  margin: 0.2rem 0 0 1rem;
+  border-color: rgb(251, 255, 0);
+  }
+
+  input[type=radio] {
+    margin-left: 1rem;
+  }  
 
   .add-book {
     margin: 0.6rem 0 0 0;
