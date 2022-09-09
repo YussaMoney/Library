@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  color: white;
+  background: linear-gradient(to right, black, gray);
+}
+
+#form {
+  display: none;
+  text-align: center;
+}
+
+input[type=text],
+input[type=number] {
+  margin: 0.2rem 0 0 12rem;
+  border-color: rgb(251, 255, 0);
+}
+
+input[type=radio] {
+  margin-left: 5rem;
+}
+
+#table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  width: 10rem;
+  border: 2px solid black;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+  background-color: rgba(220, 220, 220, 0.4);
+}
+
+.new-book,
+.add-book {
+  background-color: rgba(220, 220, 220, 0.4);
+  font-size: 0.9rem;
+  font-weight: bolder;
+  padding: 0.7rem 1.7rem;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.new-book {
+  margin: 0 auto;
+  display: flex;
+}
+
+.add-book {
+  margin: 0.6rem 0 0 3rem;
+}
+
+.display-added,
+.display-removed {
+  display: none;
+  font-size: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  border: 3px solid black;
+  text-align: center;
+  padding: 2rem 4rem;
+}
+
+.display-removed {
+  background-color: rgb(187, 14, 14);
+}
+
+.display-added {
+  background-color: rgb(238, 196, 8);
+}
+
+.removeBtn {
+  font-size: 1rem;
+  background-color: red;
+  padding: 0.2rem 1.3rem 0;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 480px) {
+  .display-added,
+  .display-removed {
+    display: none;
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    border: 2px solid black;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+
+  .display-removed {
+    background-color: rgb(187, 14, 14);
+  }
+
+  .display-added {
+    background-color: rgb(238, 196, 8);
+  }
+
+  #table {
+    margin: 0.6rem;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    height: auto;
+  }
+
+  #form {
+    display: none;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  input[type=text],
+  input[type=number] {
+    margin: 0.2rem 0 0 1rem;
+    border-color: rgb(251, 255, 0);
+  }
+
+  input[type=radio] {
+    margin-left: 1rem;
+  }
+
+  .add-book {
+    margin: 0.6rem 0 0 0;
+  }
+
+  th,
+  td {
+    font-size: 0.6rem;
+  }
+}
