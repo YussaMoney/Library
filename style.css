@@ -37,7 +37,7 @@ td {
   border: 2px solid black;
   text-align: center;
   padding: 0.5rem 0;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: rgba(220, 220, 220, 0.4);
 }
 
@@ -83,7 +83,7 @@ td {
 .removeBtn {
   font-size: 1rem;
   background-color: red;
-  padding: 0.2rem 1.3rem 0 ;
+  padding: 0.2rem 1.3rem 0;
   font-weight: bolder;
   cursor: pointer;
 }
@@ -104,7 +104,7 @@ td {
   }
 
   .display-removed {
-    background-color: rgb(7, 4, 4);
+    background-color: rgb(187, 14, 14);
   }
 
   .display-added {
@@ -126,13 +126,13 @@ td {
 
   input[type=text],
   input[type=number] {
-  margin: 0.2rem 0 0 1rem;
-  border-color: rgb(251, 255, 0);
+    margin: 0.2rem 0 0 1rem;
+    border-color: rgb(251, 255, 0);
   }
 
   input[type=radio] {
     margin-left: 1rem;
-  }  
+  }
 
   .add-book {
     margin: 0.6rem 0 0 0;

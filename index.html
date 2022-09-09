@@ -21,36 +21,35 @@
   </table>
   <button type="button" class="new-book">ADD NEW BOOK</button>
   <form id="form">
-    Insert Book Details
-    <dt>
-      <label for="author">Author:
-        <dd><input type="text" id="author" required></dd>
+    <p class="form-heading">Insert Book Details</p>
+
+      <label for="author" id="author">Author:
+      <div><input type="text" id="author-text" required></div>
       </label>
-    </dt>
-    <dt>
-      <label for="title">Title:
-        <dd><input type="text" id="title" required></dd>
+    
+    <label for="title" id="title">Title:
+    <div><input type="text" id="title-text" required></div>
+    </label>
+    
+    <div class="pages-container">
+      <label for="pages" id="pages">Pages:
+      <div><input type="number" id="pages-text" required></div>
       </label>
-    </dt>
-    <dt>
-      <label for="pages">Pages:
-        <dd><input type="number" id="pages" required></dd>
-      </label>
-    </dt>
-    <dt>
+    </div>
+
+    <div class="read-container">
       <label for="read">Read?:
-        <dt>
+        <div>
           <input type="radio" id="yes" name="read" value="Yes">
-          <label for="yes">Yes
-          </label>
-          <dd>
-            <input type="radio" id="no" name="read" value="No" checked>
-            <label for="no">No
-            </dd>
-          </label>
-        </dt>
+          <label for="yes" id="yes">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="no" name="read" value="No" checked>
+          <label for="no" id="yes">No</label>
+        </div>
       </label>
-    </dt>
+    </div>
+
     <button type="button" class="add-book">ADD BOOK</button>
   </form>
 

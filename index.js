@@ -5,12 +5,13 @@ const addBookBtn = document.querySelector('.add-book');
 const table = document.querySelector('tbody');
 
 function Book(author, title, pages, read) {
-  return {author, title, pages, read};
+  return {
+    author, title, pages, read,
+  };
 }
 
 function addBookToLibrary(book) {
   myLibrary.push(book);
-
 }
 
 function displayForm() {
@@ -21,18 +22,18 @@ function displayForm() {
 
 function displayBookPage() {
   let text = '';
-  
+
   let index = 0;
   for (let i = 0; i < myLibrary.length; i++) {
     index++;
     const book = myLibrary[i];
     text += `<tr data-index='${i}'>`;
-    text += `<td>${book.author}</td>`; 
+    text += `<td>${book.author}</td>`;
     text += `<td>${book.title}</td>`;
     text += `<td>${book.pages}</td>`;
     text += `<td>${book.read}</td>`;
-    text += `<td><button onclick='removeBook()' data-index='${i}' type='button' class='removeBtn'>X</button></td>`
-    text += `</tr>` 
+    text += `<td><button onclick='removeBook()' data-index='${i}' type='button' class='removeBtn'>X</button></td>`;
+    text += '</tr>';
   }
   table.innerHTML = text;
 }
@@ -45,19 +46,19 @@ function removeBook() {
     removed.style.display = 'none';
   }, 1500);
 
-  rows = document.querySelectorAll('tr');
-  rows.forEach((row)=> row.addEventListener('click', function (e) {
+  const rows = document.querySelectorAll('tr');
+  rows.forEach((row) => row.addEventListener('click', (e) => {
     index = e.target.getAttribute('data-index');
     myLibrary.splice(index, 1);
     displayBookPage();
-  }))
+  }));
 }
 
 function addToBookInfo() {
-  let author = document.querySelector('#author').value;
-  let title = document.querySelector('#title').value;
-  let pages = document.querySelector('#pages').value;
-  let read = document.querySelector('input[type=radio]:checked').value;
+  const author = document.querySelector('#author-text').value;
+  const title = document.querySelector('#title-text').value;
+  const pages = document.querySelector('#pages-text').value;
+  const read = document.querySelector('input[type=radio]:checked').value;
   const form = document.querySelector('#form');
 
   form.style.display = 'none';
@@ -79,8 +80,8 @@ addBookBtn.addEventListener('click', addToBookInfo);
 
 myLibrary = [
   Book('Chinua Achebe', 'Things Fall Apart', 225, 'Yes'),
-  Book ('Elie Wiesel', 'Night', 116, 'No'),
+  Book('Elie Wiesel', 'Night', 116, 'No'),
   Book('Ola Rotimi', 'The Gods Are Not To Blame', 72, 'No'),
-  Book('Keye Abiona', 'Even Kins Are Guilty', 85, 'Yes')
+  Book('Keye Abiona', 'Even Kins Are Guilty', 85, 'Yes'),
 ];
 displayBookPage();
