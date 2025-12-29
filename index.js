@@ -10,6 +10,9 @@ function Book(author, title, pages, read) {
     title,
     pages,
     read,
+    toggleRead() {
+      this.read = this.read === "Yes" ? "No" : "Yes";
+    },
   };
 }
 
@@ -34,11 +37,19 @@ function displayBookPage() {
     text += `<td>${book.author}</td>`;
     text += `<td>${book.title}</td>`;
     text += `<td>${book.pages}</td>`;
-    text += `<td>${book.read}</td>`;
-    text += `<td><button onclick='removeBook()' data-index='${i}' type='button' class='removeBtn'>X</button></td>`;
+    text += `<td>${book.read} <button onclick='toggleRead(${i})' data-index='${i}' type='button' class='toggleBtn'>${book.read === "Yes" ? "No" : "Yes"}</button></td>`;
+    text += `<td> <button onclick='removeBook()' data-index='${i}' type='button' class='removeBtn'>X</button></td>`;
     text += "</tr>";
   }
   table.innerHTML = text;
+}
+
+function toggleRead(toggle) {
+  const toggleBtn = Number(toggle);
+  if (myLibrary[toggleBtn] && typeof myLibrary[toggleBtn].toggleRead === "function") {
+    myLibrary[toggleBtn].toggleRead();
+    displayBookPage();
+  }
 }
 
 function removeBook() {

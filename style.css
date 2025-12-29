@@ -88,6 +88,26 @@ td {
   cursor: pointer;
 }
 
+.removeBtn:hover {
+  background-color: darkred;
+}
+
+.toggleBtn {
+  font-size: 1rem;
+  background-color: #3cb371;
+  color: white;
+  padding: 0.3rem 1.3rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bolder;
+  cursor: pointer;
+  margin-right: 0.4rem;
+}
+
+.toggleBtn:hover {
+  background-color: #2e8b57;
+}
+
 @media only screen
   and (min-width: 320px)
   and (max-width: 480px) {
