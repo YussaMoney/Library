@@ -162,4 +162,10 @@ td {
   td {
     font-size: 0.6rem;
   }
+
+  .toggleBtn {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.8rem;
+    margin-right: 0.2rem;
+  }
 }
