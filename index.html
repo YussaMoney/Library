@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Libary</title>
+</head>
+<body>
+  <table id="table">
+    <thead>
+      <th>Author</th>
+      <th>Title</th>
+      <th>No. of Pages</th>
+      <th>Read?</th>
+      <th>Remove</th>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  <button type="button" class="new-book">ADD NEW BOOK</button>
+  <form id="form">
+    <p class="form-heading">Insert Book Details</p>
+
+      <label for="author" id="author">Author:
+      <div><input type="text" id="author-text" required></div>
+      </label>
+    
+    <label for="title" id="title">Title:
+    <div><input type="text" id="title-text" required></div>
+    </label>
+    
+    <div class="pages-container">
+      <label for="pages" id="pages">Pages:
+      <div><input type="number" id="pages-text" required></div>
+      </label>
+    </div>
+
+    <div class="read-container">
+      <label for="read">Read?:
+        <div>
+          <input type="radio" id="yes" name="read" value="Yes">
+          <label for="yes" id="yes">Yes</label>
+        </div>
+        <div>
+          <input type="radio" id="no" name="read" value="No" checked>
+          <label for="no" id="yes">No</label>
+        </div>
+      </label>
+    </div>
+
+    <button type="button" class="add-book">ADD BOOK</button>
+  </form>
+
+  <div class="display-added" id="added">
+    Added Successfully!
+  </div>
+
+  <div class="display-removed" id="removed">
+    Removed Successfully!
+  </div>
+
+
+
+  <script src="index.js"></script>
+</body>
+</html>
