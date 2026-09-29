@@ -1,5 +1,5 @@
 # Library
- This is a **Library** where someone can `add` or `store` new book with the provided `Add New Book Button` where an `input form` collected user's input or book's details to add to library and can also `remove` the existing book with the provided `Remove Button` labeled `'X'`.
+ This is a **Library** where someone can `add` or `store` new book with the provided `Add New Book Button` where an `input form` collected user's input or book's details to add to library and can also delete books from the library.
 
 
 ![Library](Library.png)
@@ -37,7 +37,7 @@ Web browser(chrome)
 👤 **Azeez Yusuf O.**
 
 - Github: [@YussaMoney](https://github.com/YussaMoney)
-- Twitter: [@YussaMoney](https://twitter.com/YussaMoney)
+- Twitter: [@Yussassiph](https://x.com/Yussassiph)
 - Linkedin: [@YussaMoney](https://www.linkedin.com/in/yussamoney)
 
 ## 🤝 Contributing
